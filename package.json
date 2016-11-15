@@ -1,20 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "ts-react-electron-demo",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "dist/main/bundle.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
+  "repository": "https://github.com/timbarclay/ts-react-electron-demo",
+  "author": "Tim Barclay",
   "license": "CC0-1.0",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.14",
