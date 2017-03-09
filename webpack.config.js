@@ -5,7 +5,9 @@ const ExtractPlugin = require("extract-text-webpack-plugin");
 const CleanPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var plugins = [
+console.log(`Building for ${environment}`);
+
+const plugins = [
   new CleanPlugin("dist"),
   new ExtractPlugin("bundle.css"),
   new webpack.DefinePlugin({
@@ -14,15 +16,10 @@ var plugins = [
       "NODE_ENV": JSON.stringify(environment)
     }
   }),
-  new webpack.ProvidePlugin({
-    fetch: "imports?this=>global!exports?global.fetch!isomorphic-fetch"
-  }),
   new HtmlWebpackPlugin({
     chunks: ['renderer']
   })
 ];
-
-console.log(`Building for ${environment}`);
 
 if(production){
   plugins = plugins.concat([

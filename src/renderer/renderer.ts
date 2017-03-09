@@ -6,3 +6,6 @@ const body = document.querySelector("body");
 const div = document.createElement("div");
 div.classList.add("app-content");
 body.appendChild(div);
+
+fetch("https://raw.githubusercontent.com/timbarclay/PlaysThis/gh-pages/images/AlexeyP1.jpg")
+  .then(response => console.log(response.blob()));
