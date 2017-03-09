@@ -12,6 +12,8 @@
   "author": "Tim Barclay",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@types/electron": "^1.4.33",
+    "@types/node": "^7.0.7",
     "clean-webpack-plugin": "^0.1.14",
     "css-loader": "^0.26.4",
     "electron": "^1.4.1",

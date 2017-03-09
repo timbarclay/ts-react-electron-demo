@@ -1,6 +1,0 @@
-{
-  "globalDependencies": {
-    "electron/github-electron": "registry:dt/electron/github-electron#1.4.4+20161022024109",
-    "node": "registry:dt/node#6.0.0+20161110151007"
-  }
-}
