@@ -4,28 +4,30 @@
   "description": "A minimal Electron application",
   "main": "dist/main/bundle.js",
   "scripts": {
-    "start": "electron ."
+    "build": "webpack",
+    "electron": "electron .",
+    "start": "npm run build && npm run electron"
   },
   "repository": "https://github.com/timbarclay/ts-react-electron-demo",
   "author": "Tim Barclay",
   "license": "CC0-1.0",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.14",
-    "css-loader": "^0.25.0",
+    "css-loader": "^0.26.4",
     "electron": "^1.4.1",
     "exports-loader": "^0.6.3",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.24.1",
-    "imports-loader": "^0.6.5",
-    "node-sass": "^3.12.2",
-    "sass-loader": "^4.0.2",
+    "imports-loader": "^0.7.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
-    "ts-loader": "^1.2.0",
+    "ts-loader": "^2.0.1",
     "typescript": "^2.0.9",
     "uglify-js": "^2.7.4",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.3"
+    "webpack": "^2.2.1"
   }
 }
