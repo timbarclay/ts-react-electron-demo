@@ -45,7 +45,7 @@ module.exports = {
 
   entry: {
     main: "./src/main/main.ts",
-    renderer: "./src/renderer/renderer.ts"
+    renderer: "./src/renderer/renderer.tsx"
   },
   output: {
     path: "dist",
