@@ -5,8 +5,8 @@ import * as Redux from "redux";
 import thunk from "redux-thunk";
 import * as logger from "redux-logger";
 
-import rootReducer from "./components/rootReducer";
-import App from "./components/App";
+import rootReducer from "./ui/rootReducer";
+import App from "./ui/App";
 
 const middlewares: Redux.Middleware[] = [thunk];
 

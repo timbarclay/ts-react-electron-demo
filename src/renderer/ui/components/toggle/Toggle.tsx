@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./toggle.scss";
 
 interface IProps {
   toggle: boolean;

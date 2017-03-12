@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import {IState} from "../rootReducer";
-import {toggle} from "../core/toggle/toggleActions";
-import Toggle from "../core/toggle/Toggle";
+import {toggle} from "../components/toggle/toggleActions";
+import Toggle from "../components/toggle/Toggle";
 
 const mapStateToProps = (state: IState) => {
   return {
