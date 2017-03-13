@@ -4,10 +4,11 @@ const production = environment === "production";
 const ExtractPlugin = require("extract-text-webpack-plugin");
 const CleanPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BabiliPlugin = require('babili-webpack-plugin');
 
 console.log(`Building for ${environment}`);
 
-const plugins = [
+let plugins = [
   new CleanPlugin("dist"),
   new ExtractPlugin("bundle.css"),
   new webpack.DefinePlugin({
@@ -26,12 +27,7 @@ if(production){
     new webpack.optimize.MinChunkSizePlugin({
       minChunkSize: 51200
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      mangle: true
-    })
+    new BabiliPlugin()
   ]);
 }
 

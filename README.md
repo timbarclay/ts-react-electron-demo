@@ -2,6 +2,14 @@
 
 A little starter package for scaffolding React & Redux based Electron apps written in Typescript and build with Webpack.
 
+## Features
+
+This package uses Typescript, React, Redux, Webpack 2 and Babili (so we can use Webpack's [tree-shaking](https://github.com/blacksonic/typescript-webpack-tree-shaking)). All the code goes inside `src` with stuff to do with the main process in `src/main` and stuff to do with the renderer processes in `src/renderer`. 
+
+All React stuff lives in `src/renderer/ui`. `src/renderer/ui/rootReducer.ts` contains the root Redux reducer as well as an interface that defines the 'state shape'. Individual, reusable React components live in `components` along with their styles and their Redux actions and reducers while Redux container components (i.e where `mapStateToProps` functions etc happen) are in `containers`. 
+
+Non-UI related front end code lives in `src/renderer/application`.
+
 ## Running locally
 
 * Make sure you have electron `npm install -g electron` and typings `npm install -g typings`
@@ -14,6 +22,7 @@ A little starter package for scaffolding React & Redux based Electron apps writt
 - [ ] Add testing (Mocha, Chai, Enzyme)
 - [ ] Add [React Storybook](https://getstorybook.io/) (maybe - I might not bother with this)
 - [ ] Add support for building/packaging cross platform apps (options include [electron-builder](https://github.com/electron-userland/electron-builder) and [electron-packager](https://github.com/electron-userland/electron-packager))
+- [ ] Figure out if I actually need `.babelrc` and `babel-preset-env` for Babili to work properly with Typescript and Webpack
 
 ## Other useful packages/reading
 

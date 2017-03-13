@@ -17,10 +17,9 @@ if(__DEVELOPMENT__) {
 const middleware = Redux.applyMiddleware(...middlewares);
 const store = Redux.createStore(rootReducer, middleware);
 
-// Create div to mount react into
-const body = document.querySelector("body");
+// Create element to mount react into
 const main = document.createElement("main");
-body.appendChild(main);
+document.querySelector("body").appendChild(main);
 
 const rootElement = (
   <Provider store={store}>
