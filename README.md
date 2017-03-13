@@ -12,7 +12,7 @@ A little starter package for scaffolding React & Redux based Electron apps writt
 ## Todo
 
 - [ ] Add testing (Mocha, Chai, Enzyme)
-- [ ] (Maybe) add [React Storybook](https://getstorybook.io/)
+- [ ] Add [React Storybook](https://getstorybook.io/) (maybe - I might not bother with this)
 - [ ] Add support for building/packaging cross platform apps (options include [electron-builder](https://github.com/electron-userland/electron-builder) and [electron-packager](https://github.com/electron-userland/electron-packager))
 
 ## Other useful packages/reading
