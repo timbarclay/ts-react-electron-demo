@@ -1,6 +1,6 @@
 import * as React from "react";
 import {expect} from "chai";
-import {mount, shallow} from "enzyme";
+import {shallow} from "enzyme";
 import * as sinon from "sinon";
 
 import Toggle from "../../../src/renderer/ui/components/toggle/Toggle";
