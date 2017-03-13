@@ -10,6 +10,8 @@ All React stuff lives in `src/renderer/ui`. `src/renderer/ui/rootReducer.ts` con
 
 Non-UI related front end code lives in `src/renderer/application`.
 
+Tests use Mocha, Chai, Sinon and Enzyme (for testing React components). All tests live in `test`. There is a `tsconfig.test.json` just for the Mocha tests which tells the TS compiler to target ES5 instead of ES2015.
+
 ## Running locally
 
 * Make sure you have electron `npm install -g electron` and typings `npm install -g typings`
@@ -17,9 +19,13 @@ Non-UI related front end code lives in `src/renderer/application`.
 * `npm install` and `typings install`
 * `npm start`
 
+To run the tests
+
+* `npm run test`
+
 ## Todo
 
-- [ ] Add testing (Mocha, Chai, Enzyme)
+- [x] Add testing (Mocha, Chai, Enzyme)
 - [ ] Add [React Storybook](https://getstorybook.io/) (maybe - I might not bother with this)
 - [ ] Add support for building/packaging cross platform apps (options include [electron-builder](https://github.com/electron-userland/electron-builder) and [electron-packager](https://github.com/electron-userland/electron-packager))
 - [ ] Figure out if I actually need `.babelrc` and `babel-preset-env` for Babili to work properly with Typescript and Webpack

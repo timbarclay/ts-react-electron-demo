@@ -1,0 +1,2 @@
+--require ignore-styles
+--compilers ts:ts-node/register test/**/*.ts*

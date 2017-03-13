@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es5",
+        "moduleResolution": "node",
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
