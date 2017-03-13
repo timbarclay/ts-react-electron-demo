@@ -1,7 +1,7 @@
 {
-  "name": "ts-react-electron-demo",
+  "name": "ts-react-electron-starter",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An Electron startup package including React and Redux, written in Typescript",
   "main": "dist/main/bundle.js",
   "scripts": {
     "build": "webpack",
