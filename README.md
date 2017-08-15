@@ -14,9 +14,9 @@ Tests use Mocha, Chai, Sinon and Enzyme (for testing React components). All test
 
 ## Running locally
 
-* Make sure you have electron `npm install -g electron` and typings `npm install -g typings`
+* Make sure you have electron `npm install -g electron`
 * Clone repo and `cd` into it
-* `npm install` and `typings install`
+* `npm install`
 * `npm start`
 
 To run the tests
@@ -29,6 +29,7 @@ To run the tests
 - [ ] Add [React Storybook](https://getstorybook.io/) (maybe - I might not bother with this)
 - [ ] Add support for building/packaging cross platform apps (options include [electron-builder](https://github.com/electron-userland/electron-builder) and [electron-packager](https://github.com/electron-userland/electron-packager))
 - [ ] Figure out if I actually need `.babelrc` and `babel-preset-env` for Babili to work properly with Typescript and Webpack
+- [ ] Update babili to babel-minify
 
 ## Other useful packages/reading
 
