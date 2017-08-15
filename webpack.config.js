@@ -5,8 +5,12 @@ const ExtractPlugin = require("extract-text-webpack-plugin");
 const CleanPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
+const path = require('path');
 
 console.log(`Building for ${environment}`);
+
+// C:/ needs to be upper case! https://github.com/webpack/webpack/issues/4549
+const workingDir = __dirname.charAt(0).toUpperCase() + __dirname.slice(1);
 
 let plugins = [
   new CleanPlugin("dist"),
@@ -40,11 +44,11 @@ module.exports = {
   },
 
   entry: {
-    main: "./src/main/main.ts",
-    renderer: "./src/renderer/renderer.tsx"
+    main: path.resolve(workingDir, 'src', 'main', 'main.ts'),
+    renderer: path.resolve(workingDir, 'src', 'renderer', 'renderer.tsx')
   },
   output: {
-    path: "dist",
+    path: path.resolve(workingDir, 'dist'),
     filename: "[name]/bundle.js",
   },
 

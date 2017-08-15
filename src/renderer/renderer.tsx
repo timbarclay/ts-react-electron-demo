@@ -11,7 +11,7 @@ import App from "./ui/App";
 const middlewares: Redux.Middleware[] = [thunk];
 
 if(__DEVELOPMENT__) {
-  middlewares.push(logger());
+  middlewares.push((logger as any)());
 }
 
 const middleware = Redux.applyMiddleware(...middlewares);
